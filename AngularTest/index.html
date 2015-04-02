@@ -1,0 +1,60 @@
+﻿
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title></title>
+
+
+   
+    <link href="content/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/custom.css" rel="stylesheet" />
+</head>
+<body class="home-page yo-anim-enabled">
+    <header id="home3" class="main-section home">
+        <div class="home-fullscreen">
+
+
+            <section class="item">
+                <div class="video-wrapper" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0; "></div>
+                <div id="P1" class="player" style="display:block; margin: auto; background: rgba(0,0,0,0.5);" data-property="{videoURL:'http://youtu.be/dSpQ5zdR4dE',containment:'.video-wrapper',startAt:0,mute:true,autoPlay:true,loop:true,opacity:1, showControls: false}"></div>
+                <div class="video-mask hidden-xs"></div>
+            </section>
+        </div>
+    </header>
+    <div data-ng-include="'app/views/shell.html'"></div>
+
+    <div>
+    </div>
+
+    <span data-cc-scroll-to-top></span>
+
+    <!-- Vendor Scripts -->
+    <script src="scripts/jquery-2.1.1.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-sanitize.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+
+    <script src="Scripts/angular-file-upload-shim.min.js"></script>
+    <script src="Scripts/angular-file-upload.min.js"></script>
+    <script src="scripts/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script src="scripts/spin.js"></script>
+    <script src="../../Scripts/jquery.mb.YTPlayer.js"></script>
+
+    <!-- Bootstrapping -->
+    <script src="app/app.js"></script>
+    <script src="app/config.route.js"></script>
+
+    <!-- app -->
+  <!--Services-->
+    <script src="app/services/loginService.js"></script>
+
+    <!--Controllers-->
+    <script src="app/controllers/dashboardController.js"></script>
+    <script src="app/controllers/loginController.js"></script>
+    <script src="app/controllers/shellController.js"></script>
+
+</body>
+</html>
+

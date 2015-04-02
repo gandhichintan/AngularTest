@@ -1,0 +1,16 @@
+﻿<section id="dashboard-view" class="mainbar" data-ng-controller="dashboard as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="btn btn-info" ng-file-select ng-model="vm.files">Select Files :</div>
+                    <button class="btn btn-dark" ng-click="vm.upload(vm.files);">Upload</button>
+                </div>
+                <div class="clearfix"></div>
+                <div ng-repeat="img in vm.filePath">
+                    <img ng-src="{{img.Path}}"/>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

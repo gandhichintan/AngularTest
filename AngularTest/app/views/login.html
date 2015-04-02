@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<div ng-controller="login as vm">
+    <div class="container-fluid" style="">
+        <button class="btn btn-primary btn-lg btnStart" ng-click="vm.loginPopup()">Start</button>
+    </div>
+    <script type="text/ng-template" id="myModalContent">
+        <div class="modal-header">
+            <h3 class="modal-title">Login</h3>
+        </div>
+        <div class="modal-body">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label">Username :</label>
+                    <div class="controls">
+                        <input ng-model="vm.username" type="text" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Password :</label>
+                    <div class="controls">
+                        <input ng-model="vm.password" type="password" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="vm.ok()">Login</button>
+            <button class="btn btn-warning" ng-click="vm.cancel()">Cancel</button>
+        </div>
+    </script>
+</div>
